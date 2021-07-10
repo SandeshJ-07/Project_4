@@ -1,0 +1,310 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+.landing {
+  min-height: 91.5vh;
+  width: 100%;
+  background-image: url("../img/Bg.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: right;
+}
+
+.overlay {
+  min-height: 91.5vh;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.808);
+  color: #fff;
+  padding: 4% 0;
+}
+
+.font-1 {
+  font-size: 6rem;
+  font-family: "poppins", sans-serif;
+}
+
+.font-2 {
+  font-family: "poppins", sans-serif;
+  font-size: 2rem;
+}
+
+.skills {
+  margin: 20px 10px 10px 10px;
+  text-align: center;
+  padding: 15px;
+  outline: 0.5px rgba(255, 255, 255, 0.61) solid;
+  background: transparent;
+  width: 90%;
+}
+
+.skills span {
+  font-size: 1.5rem;
+}
+
+.skills:hover {
+  outline: 0.5px #8d8d03 solid;
+}
+
+/* Counters */
+.counts {
+  padding-bottom: 30px;
+}
+
+.counts .count-box {
+  box-shadow: 0px 0 16px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  background: #fff;
+  margin-bottom: 30px;
+}
+
+.counts .count-box i {
+  display: block;
+  font-size: 64px;
+  margin-bottom: 15px;
+}
+
+.counts .count-box span {
+  font-size: 42px;
+  display: block;
+  font-weight: 700;
+  color: #1c5c93;
+}
+
+.counts .count-box p {
+  padding: 0;
+  margin: 0;
+  font-family: "Raleway", sans-serif;
+  font-size: 14px;
+}
+
+/* Services */
+
+.services {
+  width: 130vw;
+  overflow:hidden;
+  transform: rotate(-3deg) translateX(-13%);
+  background: black;
+}
+
+.services-content {
+  transform: rotate(3deg);
+}
+
+.services .head {
+  color: #ffffff;
+}
+
+.services h5{
+  overflow: hidden;
+}
+
+.services .icon {
+  float: left;
+  margin:10px;
+  margin-right: 10px;
+}
+
+.service-card {
+  margin: 30px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  padding: 5%;
+  background: rgb(31, 31, 31);
+  color: #fff;
+}
+
+/* Pricing Section */
+.pricing-section {
+  background: black;
+  overflow: hidden;
+  transform: rotate(-3deg) translateX(-13%);
+  width: 130vw;
+  /* height:40vh; */
+}
+
+.pricing-card h3{
+  overflow:hidden;
+}
+
+.pricing-content {
+  transform: rotate(3deg);
+}
+
+.pricing-content .head {
+  color: #ffffff;
+}
+
+.card-list {
+  list-style-type: none;
+}
+
+.card-list li {
+  line-height: 2rem;
+}
+
+/* Project Cards */
+.project-card {
+  overflow: hidden;
+}
+
+.project-card img {
+  transition: ease-in-out 0.5s;
+  overflow: hidden;
+}
+
+.project-card img:hover {
+  transform: scale(1.2);
+}
+
+.cards {
+  position: relative;
+  color: white;
+  transition: 0.5s linear;
+  overflow: hidden;
+}
+
+.cards img {
+  width: 100%;
+  transition: 0.5s ease-in-out;
+}
+
+.cards img:hover {
+  transform: scale(1.2);
+}
+.cards:hover {
+  color: blue !important;
+}
+
+.cards img:hover {
+  opacity: 0.9;
+}
+
+.desc {
+  width: 100%;
+  font-size: 1vh;
+  padding: 10px 0 10px 10px;
+  position: absolute;
+  bottom: -20px;
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.9),
+    rgba(0, 0, 0, 0.4),
+    rgba(0, 0, 0, 0.1)
+  );
+}
+
+.desc p {
+  font-size: 14px;
+  color: White;
+  text-decoration: none;
+}
+
+.desc p:first-of-type {
+  font-weight: 500;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+/* Our Team */
+.ig-bg {
+  background: linear-gradient(
+    45deg,
+    #f09433 0%,
+    #e6683c 25%,
+    #dc2743 50%,
+    #cc2366 75%,
+    #bc1888 100%
+  );
+  color: white;
+  border-radius: 50%;
+}
+
+.fb-bg {
+  background: white;
+  color: #3b5999;
+  border-radius: 50%;
+}
+
+.ln-bg {
+  background: white;
+  color: #3b5999;
+  border-radius: 10%;
+}
+
+/* Form Group */
+.form-group {
+  margin: 15px 0;
+  padding: 5px;
+}
+
+.form-group:focus-visible {
+  box-shadow: 0 0 0 10px yellow;
+}
+
+/* Footer */
+.footer {
+  background: black;
+  color: #fff;
+}
+
+.footer-links {
+  list-style-type: none;
+}
+
+.footer-links li {
+  line-height: 2rem;
+}
+
+.footer-links li a{
+  color:#fff;
+  text-decoration: none;
+}
+
+#nemail {
+  background: transparent;
+  color: #fff;
+  border: #fff 1px solid;
+  padding: 1.5%;
+}
+
+@media (max-width: 768px) {
+  #illustration {
+    display: none;
+  }
+  .service-card {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+@media (max-width: 576px) {
+  #service-desc{
+    width:75%;
+    margin:auto;
+  }
+  .pricing-card {
+    width: 70%;
+    margin: 10px auto;
+  }
+  .service-card {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .all-services {
+    padding: 0 10%;
+  }
+  .teamCard {
+    width: 60%;
+    margin: 10px auto;
+  }
+}
