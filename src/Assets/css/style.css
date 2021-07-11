@@ -86,22 +86,18 @@ body {
   font-size: 14px;
 }
 
-/* Overflow control */
-.overflowC{
-  /* overflow: hidden; */
-}
 
 /* Services */
 
 .services {
   width: 130vw;
   overflow:hidden;
-  transform: rotate(3deg) translateX(-13%);
+  transform: rotate(-3deg) translateX(-13%);
   background: black;
 }
 
 .services-content {
-  transform: rotate(-3deg);
+  transform: rotate(3deg);
 }
 
 .services .head {
