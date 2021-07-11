@@ -260,6 +260,7 @@ const Home = () => {
           </Row>
         </section>
       </Container>
+      <div className="overflowC">
       <div className="services mb-5">
         <Container className="services-content py-5" id="services">
           <p
@@ -379,10 +380,12 @@ const Home = () => {
             </Col>
           </Row>
         </Container>
+        </div>
       </div>
       <Container className="mb-5" style={{ marginTop: "10rem" }}>
         <Tabs />
       </Container>
+      <div className="overflowC">
       <div className="pricing-section">
         <Container className="pricing-content py-5" od="pricing">
           <p
@@ -490,6 +493,7 @@ const Home = () => {
           </Row>
         </Container>
       </div>
+      </div>
       <Container className="mt-5" id="projects">
         <p
           className="font-2 head text-center mb-0"
@@ -568,6 +572,7 @@ const Home = () => {
           </Row>
         </div>
       </Container>
+      <div className="overflowC">
       <div className="pricing-section py-5">
         <Container className="pricing-content" id="team">
           <p
@@ -807,6 +812,7 @@ const Home = () => {
             </Col>
           </Row>
         </Container>
+        </div>
       </div>
       <Container className="mt-5" id="contact">
         <p
@@ -988,7 +994,7 @@ const Home = () => {
                   <button
                     type="submit"
                     className="btn-warning my-3"
-                    style={{ height: "40px", borderRadius: "5%" }}
+                    style={{ height: "40px", borderRadius: "5%", padding:"0 10px"}}
                   >
                     Subscribe
                   </button>
