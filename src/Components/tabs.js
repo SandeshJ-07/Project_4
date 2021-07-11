@@ -26,30 +26,42 @@ const Tabs = (props) => {
       <Nav tabs className="justify-content-evenly" style={{border:"none", fontFamily:"font-2"}}>
         <NavItem>
           <NavLink
-            className={classnames({ active: activeTab === "1" })}
+            className={classnames({ active: activeTab === "1" }),"activeClass"}
             onClick={() => {
               toggle("1");
+              document.getElementById("tab2").classList.remove("activeClass")
+              document.getElementById("tab3").classList.remove("activeClass")
+              if(!(document.getElementById("tab1").classList.contains("activeClass"))) {document.getElementById("tab1").classList.add("activeClass")};
             }}
+            id="tab1"
           >
             Vision
           </NavLink>
         </NavItem>
         <NavItem>
           <NavLink
-            className={classnames({ active: activeTab === "2" })}
+            className={classnames({ active: activeTab === "2" }),"activeClass"}
             onClick={() => {
               toggle("2");
+              document.getElementById("tab1").classList.remove("activeClass")
+              document.getElementById("tab3").classList.remove("activeClass")
+              if(!(document.getElementById("tab2").classList.contains("activeClass"))) {document.getElementById("tab2").classList.add("activeClass")};
             }}
+            id="tab2"
           >
             Mission
           </NavLink>
         </NavItem>
         <NavItem>
           <NavLink
-            className={classnames({ active: activeTab === "3" })}
+            className={classnames({ active: activeTab === "3" }),"activeClass"}
             onClick={() => {
               toggle("3");
+              document.getElementById("tab2").classList.remove("activeClass")
+              document.getElementById("tab1").classList.remove("activeClass")
+              if(!(document.getElementById("tab3").classList.contains("activeClass"))) {document.getElementById("tab3").classList.add("activeClass")};              
             }}
+            id="tab3"
           >
             Goal
           </NavLink>
@@ -72,14 +84,7 @@ const Tabs = (props) => {
                 cupidatat non proident, sunt in culpa qui officia deserunt
                 mollit anim id est laborum
               </p>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                Ullamco laboris nisi ut aliquip ex ea commodo consequat. Ullamco
-                laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-                dolor in reprehenderit in voluptate trideta storacalaperda
-                mastiro dolore eu fugiat nulla pariatur.
-              </p>
+             
             </Col>
             <Col md="6" sm="12" className="text-center" id="illustration">
             <iframe src="https://embed.lottiefiles.com/animation/67523" height="100%"></iframe>
@@ -105,14 +110,7 @@ const Tabs = (props) => {
                 cupidatat non proident, sunt in culpa qui officia deserunt
                 mollit anim id est laborum
               </p>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                Ullamco laboris nisi ut aliquip ex ea commodo consequat. Ullamco
-                laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-                dolor in reprehenderit in voluptate trideta storacalaperda
-                mastiro dolore eu fugiat nulla pariatur.
-              </p>
+             
             </Col>
           </Row>
         </TabPane>
@@ -131,14 +129,6 @@ const Tabs = (props) => {
                 dolore eu fugiat nulla pariatur. Excepteur sint occaecat
                 cupidatat non proident, sunt in culpa qui officia deserunt
                 mollit anim id est laborum
-              </p>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                Ullamco laboris nisi ut aliquip ex ea commodo consequat. Ullamco
-                laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-                dolor in reprehenderit in voluptate trideta storacalaperda
-                mastiro dolore eu fugiat nulla pariatur.
               </p>
             </Col>
             <Col md="6" sm="12" className="text-center" id="illustration">
