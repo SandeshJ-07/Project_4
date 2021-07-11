@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  
 }
 
 body {
@@ -85,17 +86,22 @@ body {
   font-size: 14px;
 }
 
+/* Overflow control */
+.overflowC{
+  /* overflow: hidden; */
+}
+
 /* Services */
 
 .services {
   width: 130vw;
   overflow:hidden;
-  transform: rotate(-3deg) translateX(-13%);
+  transform: rotate(3deg) translateX(-13%);
   background: black;
 }
 
 .services-content {
-  transform: rotate(3deg);
+  transform: rotate(-3deg);
 }
 
 .services .head {
@@ -214,6 +220,23 @@ body {
   text-transform: uppercase;
 }
 
+
+/* Tabs */
+#tab1,#tab2,#tab3{
+  color:black;
+  padding:10px;
+}
+#tab1:hover,#tab2:hover,#tab3:hover{
+  box-shadow: 0 0 5px yellow;
+}
+#tab1:active,#tab2:active,#tab3:active{
+  background:yellow;
+}
+
+.activeClass{
+  background: yellow !important;
+}
+
 /* Our Team */
 .ig-bg {
   background: linear-gradient(
@@ -233,6 +256,7 @@ body {
   color: #3b5999;
   border-radius: 50%;
 }
+
 
 .ln-bg {
   background: white;
