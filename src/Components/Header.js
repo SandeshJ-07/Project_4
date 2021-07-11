@@ -29,13 +29,13 @@ const Header = (props) => {
         <Collapse isOpen={isOpen} navbar>
           <Nav className="ms-auto" navbar>
             <NavItem>
-              <NavLink href="/components/" className="active">Home</NavLink>
+              <NavLink href="#" className="active">Home</NavLink>
             </NavItem>
             <NavItem>
-              <NavLink href="#">Services</NavLink>
+              <NavLink href="#serivces">Services</NavLink>
             </NavItem>          
             <NavItem>
-              <NavLink>Contact</NavLink>
+              <NavLink href="#contact">Contact</NavLink>
             </NavItem>
           </Nav>
         </Collapse>
